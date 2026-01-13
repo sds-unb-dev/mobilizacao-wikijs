@@ -4,6 +4,8 @@ metadata:
   name: postgres-pvc
   namespace: sds
 spec:
+  # StorageClass disponível no cluster (OpenEBS)
+  storageClassName: openebs-hostpath
   accessModes:
     - ReadWriteOnce
   resources:
